@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Admin Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect('login');
-});
+/*
+	|--------------------------------------------------------------------------
+	| Admin Default Routes
+	|--------------------------------------------------------------------------
+	*/
 
-Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
-Route::post('login', ['as' => '', 'uses' => 'Auth\LoginController@login']);
+	Route::get('/', 'Admin\HomeController@index')->name('home');
+
 

@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/dist/css/AdminLTE.min.css') }}">
 
     @if(config('adminlte.plugins.datatables'))
-        <!-- DataTables with bootstrap 3 style -->
-        <link rel="stylesheet" href="//cdn.datatables.net/v/bs/dt-1.10.18/datatables.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
     @endif
 
     @yield('adminlte_css')
@@ -52,8 +52,8 @@
 @endif
 
 @if(config('adminlte.plugins.datatables'))
-    <!-- DataTables with bootstrap 3 renderer -->
-    <script src="//cdn.datatables.net/v/bs/dt-1.10.18/datatables.min.js"></script>
+    <!-- DataTables -->
+    <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 @endif
 
 @if(config('adminlte.plugins.chartjs'))
